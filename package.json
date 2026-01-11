@@ -1,6 +1,6 @@
 {
   "name": "mulyonode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Runtime wrapper yang stabil seperti koalisi gemuk. Anti-kritik, pro-nepotisme, WTP guaranteed.",
   "main": "lib/dynasty.js",
   "bin": {
