@@ -1,0 +1,47 @@
+# Test files (bukti tidak perlu dipublikasi)
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
+test-*.js
+
+# Development files
+.gitignore
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Documentation source (yang penting hasilnya, bukan prosesnya)
+docs/
+*.md
+!README.md
+
+# CI/CD config
+.github/
+.gitlab-ci.yml
+.travis.yml
+Jenkinsfile
+
+# IDE settings
+.idea/
+.vscode/
+
+# Coverage reports (bukti keberhasilan internal)
+coverage/
+.nyc_output/
+
+# Example files (contoh tidak perlu, langsung praktik)
+examples/
+example/
+
+# Generated config (rahasia rezim)
+revolusi-mental.config.js
+
+# Benchmarks
+benchmark/
+benchmarks/
+
+# Development dependencies info
+package-lock.json
+yarn.lock

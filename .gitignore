@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Log files (yang tidak di-cover media)
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables (rahasia negara)
+.env
+.env.local
+.env.*.local
+
+# IDE settings (preferensi pribadi, bukan milik publik)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.agent/
+.gemini/
+
+# OS generated files (sampah sistem)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage (bukti keberhasilan yang tidak perlu dipublikasi)
+coverage/
+.nyc_output/
+
+# Config yang di-generate (rahasia konfigurasi rezim)
+revolusi-mental.config.js
+
+# Temporary files (file sementara seperti jabatan)
+*.tmp
+*.temp
+.cache/
+
+# Package manager locks (kunci pengadaan)
+# Uncomment jika tidak ingin commit
+# package-lock.json
+# yarn.lock
+
+# Hasil audit (tidak untuk konsumsi publik)
+audit-results/
+laporan-*.json
+
+# Dokumentasi rahasia
+docs/internal/
+*.secret.md
+
+# Binary sawit (kalau ada integrasi)
+*.sawit
+
+# Files yang "menguap"
+*.evaporated
+*.hilang

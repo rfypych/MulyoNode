@@ -1,0 +1,48 @@
+{
+  "name": "mulyonode",
+  "version": "1.0.3",
+  "description": "Runtime wrapper yang stabil seperti koalisi gemuk. Anti-kritik, pro-nepotisme, WTP guaranteed.",
+  "main": "lib/dynasty.js",
+  "bin": {
+    "mulyo": "./bin/mulyo"
+  },
+  "scripts": {
+    "test": "echo \"Hasil Test: LULUS. Tidak perlu dicek lagi.\" && exit 0",
+    "audit": "echo \"Audit: WTP - Wajar Tanpa Pengecualian\" && exit 0",
+    "bansos": "node -e \"console.log('Menggelontorkan bantuan...')\"",
+    "pembangunan": "echo \"Infrastruktur sedang dibangun. Tolong jangan diprotes.\""
+  },
+  "keywords": [
+    "runtime",
+    "satirical",
+    "parody",
+    "indonesia",
+    "politik",
+    "nodemon-parody",
+    "dinasti",
+    "infrastruktur"
+  ],
+  "author": "Koalisi Developer Indonesia",
+  "license": "WTFPL",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rfypych/MulyoNode"
+  },
+  "bugs": {
+    "url": "https://github.com/rfypych/MulyoNode/issues",
+    "email": "laporan@tidakditanggapi.go.id"
+  },
+  "homepage": "https://mulyonode.pembangunan.id",
+  "funding": {
+    "type": "bansos",
+    "url": "https://bansos.mulyonode.id"
+  }
+}
