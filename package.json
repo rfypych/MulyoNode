@@ -1,7 +1,7 @@
 {
   "name": "mulyonode",
   "version": "1.0.4",
-  "description": "Runtime wrapper yang stabil seperti koalisi gemuk. Anti-kritik, pro-nepotisme, WTP guaranteed.",
+  "description": "A runtime wrapper as stable as a grand coalition. Criticism-proof, pro-nepotism, and guaranteed WTP.",
   "main": "lib/dynasty.js",
   "bin": {
     "mulyo": "./bin/mulyo"
@@ -40,9 +40,5 @@
     "url": "https://github.com/rfypych/MulyoNode/issues",
     "email": "laporan@tidakditanggapi.go.id"
   },
-  "homepage": "https://mulyonode.pembangunan.id",
-  "funding": {
-    "type": "bansos",
-    "url": "https://bansos.mulyonode.id"
-  }
+  "homepage": "https://github.com/rfypych/MulyoNode#readme"
 }
