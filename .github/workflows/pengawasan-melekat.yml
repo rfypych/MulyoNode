@@ -1,0 +1,35 @@
+name: Pengawasan Melekat (Surveillance)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  sidak-nasional:
+    name: Sidak Nasional (National Inspection)
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - name: 🕵️ Masuk ke Wilayah (Checkout)
+      uses: actions/checkout@v4
+
+    - name: 🏗️ Menyiapkan Lahan (Setup Node.js ${{ matrix.node-version }})
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: 📦 Pengadaan Barang (Install Dependencies)
+      run: npm ci
+
+    - name: 🔍 Operasi Intelijen (Run Unit Tests)
+      run: npm run test:unit
+
+    - name: 📊 Laporan Kinerja (Coverage)
+      run: npm run test:coverage
