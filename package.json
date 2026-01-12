@@ -15,8 +15,7 @@
     "format": "prettier --write .",
     "audit": "echo \"Audit: WTP - Wajar Tanpa Pengecualian\" && exit 0",
     "bansos": "node -e \"console.log('Menggelontorkan bantuan...')\"",
-    "pembangunan": "echo \"Infrastruktur sedang dibangun. Tolong jangan diprotes.\"",
-    "prepare": "husky"
+    "pembangunan": "echo \"Infrastruktur sedang dibangun. Tolong jangan diprotes.\""
   },
   "keywords": [
     "runtime",
