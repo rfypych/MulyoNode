@@ -14,6 +14,9 @@
 <a href="https://nodejs.org">
 <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-green?style=for-the-badge&logo=node.js" alt="Node Version" />
 </a>
+<a href="#">
+<img src="https://img.shields.io/badge/build-SAFE-brightgreen?style=for-the-badge&logo=github-actions" alt="Build Status" />
+</a>
 
 <!-- Satirical Badges -->
 <a href="#">
@@ -54,6 +57,7 @@
     - [3. Inspection (Monitor)](#3-inspection-monitor)
     - [4. Wiretap (Logs)](#4-wiretap-logs)
     - [5. Impeachment (Stop)](#5-impeachment-stop)
+  - [🕵️ Internal Surveillance (Testing)](#️-internal-surveillance-testing)
   - [� Command Reference (Kamus Istilah)](#-command-reference-kamus-istilah)
   - [🛠️ Special Operations (Detail)](#️-special-operations-detail)
   - [⚙️ Configuration Strategy](#️-configuration-strategy)
@@ -153,6 +157,19 @@ When a process becomes a liability, remove it.
 ```bash
 mulyo lengser <PID>
 ```
+
+---
+
+## 🕵️ Internal Surveillance (Testing)
+
+Every regime needs a robust verification system to ensure loyalty and stability.
+
+| Command              | Context                                                                 |
+| :------------------- | :---------------------------------------------------------------------- |
+| **`npm test`**       | **Public Statement.** Always passes. Shows "Hasil Test: LULUS" to calm the market. |
+| **`npm run test:unit`** | **Internal Interrogation.** Runs real Jest unit tests behind closed doors. Use this to verify structural integrity. |
+
+> *"If the tests fail, it's not a bug. It's a foreign intervention attempt."*
 
 ---
 
