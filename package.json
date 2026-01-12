@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Hasil Test: LULUS. Tidak perlu dicek lagi.\" && exit 0",
+    "test:unit": "jest tests/",
     "audit": "echo \"Audit: WTP - Wajar Tanpa Pengecualian\" && exit 0",
     "bansos": "node -e \"console.log('Menggelontorkan bantuan...')\"",
     "pembangunan": "echo \"Infrastruktur sedang dibangun. Tolong jangan diprotes.\""
@@ -40,5 +41,8 @@
     "url": "https://github.com/rfypych/MulyoNode/issues",
     "email": "laporan@tidakditanggapi.go.id"
   },
-  "homepage": "https://github.com/rfypych/MulyoNode#readme"
+  "homepage": "https://github.com/rfypych/MulyoNode#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
 }
