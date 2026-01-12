@@ -1,11 +1,8 @@
 const fs = require('fs');
-const path = require('path');
-const os = require('os');
 
 // Factory mock for os to handle top-level call
 jest.mock('os', () => ({
     homedir: jest.fn(() => '/mock/home'),
-    // Add other os methods if needed, but only homedir is used
 }));
 
 jest.mock('fs');
@@ -14,10 +11,6 @@ jest.mock('fs');
 const state = require('../../lib/state');
 
 describe('State Module', () => {
-    const mockHomeDir = '/mock/home';
-    const mockMulyoDir = path.join(mockHomeDir, '.mulyo');
-    const mockDbPath = path.join(mockMulyoDir, 'ordal.json');
-
     beforeEach(() => {
         jest.clearAllMocks();
 
