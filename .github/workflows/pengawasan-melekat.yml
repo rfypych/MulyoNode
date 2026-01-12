@@ -31,5 +31,11 @@ jobs:
     - name: 🔍 Operasi Intelijen (Run Unit Tests)
       run: npm run test:unit
 
+    - name: 🧹 Penertiban Atribut (Linting)
+      run: npm run lint
+
+    - name: 🛡️ Cek Keamanan (Security Audit)
+      run: npm audit --audit-level=high
+
     - name: 📊 Laporan Kinerja (Coverage)
       run: npm run test:coverage

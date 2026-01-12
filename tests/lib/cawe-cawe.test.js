@@ -1,5 +1,4 @@
 const cawe = require('../../lib/cawe-cawe');
-const chalk = require('chalk');
 
 describe('Cawe-Cawe Module', () => {
     // Mock console methods
