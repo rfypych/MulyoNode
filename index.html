@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MulyoNode - The Dynasty Runtime</title>
+    <meta name="description"
+        content="A runtime wrapper as stable as a grand coalition. Criticism-proof, pro-nepotism, and guaranteed WTP.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="docs/css/style.css">
+    <link rel="icon" type="image/png" href="docs/logo.png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="docs/assets/mainlogo.png" alt="MulyoNode Logo">
+                <div class="logo-text">
+                    <span>MulyoNode</span>
+                    <span class="version-tag">v1.0.6 (Stable Coalition)</span>
+                </div>
+            </a>
+            <div class="nav-links desktop-only">
+                <a href="#architecture">Architecture</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#commands">Commands</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://github.com/rfypych/MulyoNode" target="_blank" class="github-link"><i
+                        class="ri-github-fill"></i></a>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <button id="mobile-menu-toggle" class="icon-btn mobile-only" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#architecture">Architecture</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#commands">Commands</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <div class="audit-status">
+                    Audit Status: <span class="wtp">WTP Guaranteed <i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <h1>Ensure Continuity with <br><span class="gradient-text">Absolute Power</span></h1>
+                <p class="lead">
+                    The only Node.js runtime wrapper that treats errors as "hoaxes" and crashes as "unannounced field
+                    visits". Built for regimes that cannot afford downtime or accountability.
+                </p>
+                <div class="hero-btns">
+                    <div class="copy-cmd-wrapper">
+                        <span class="cmd-prefix">$</span>
+                        <input type="text" value="npm install -g mulyonode" readonly id="install-cmd">
+                        <button class="btn-copy" onclick="copyInstallCmd(event)">
+                            <i class="ri-file-copy-line"></i>
+                        </button>
+                    </div>
+                    <a href="#philosophy" class="btn btn-primary">Read the Manifesto</a>
+                </div>
+                <div class="trusted-by">
+                    <span>Trusted by:</span>
+                    <div class="logos">
+                        <span>🏛️ The Senate</span>
+                        <span>🏗️ Infrastructure Inc.</span>
+                        <span>🤴 The Family</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="buttons">
+                            <span class="close"></span>
+                            <span class="minimize"></span>
+                            <span class="maximize"></span>
+                        </div>
+                        <div class="title">root@palace:~</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <!-- JS will type here -->
+                    </div>
+                </div>
+
+                <!-- Floating Stats Card -->
+                <div class="stats-card">
+                    <div class="stat-header">
+                        <i class="ri-database-2-line"></i>
+                        <span>Bansos Allocation</span>
+                    </div>
+                    <div class="stat-number" id="bansos-counter">0.00</div>
+                    <div class="stat-unit">GB / sec</div>
+                    <div class="stat-chart">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar active" style="height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section section-architect">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>The Dynasty Architecture</h2>
+                <p>Designed to maintain power structures regardless of technical debt.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card detail-card">
+                    <div class="card-icon green"><i class="ri-shield-star-line"></i></div>
+                    <h3>Anti-Criticism Shield</h3>
+                    <p>MulyoNode intercepts <code>stderr</code>. Warnings turn into "Constructive Feedback". Errors
+                        disappear into "National Secrets".</p>
+                </div>
+                <div class="card detail-card">
+                    <div class="card-icon gold"><i class="ri-vip-crown-fill"></i></div>
+                    <h3>Nepotism Scheduler</h3>
+                    <p>Processes tagged as <code>--family</code> or <code>--gold</code> get 99% CPU priority. Other
+                        processes must wait for "trickle-down" resources.</p>
+                </div>
+                <div class="card detail-card">
+                    <div class="card-icon red"><i class="ri-alert-line"></i></div>
+                    <h3>Auto-Reshuffle</h3>
+                    <p>If a worker process performs poorly, it is silently replaced by a clone. The public (user) sees
+                        zero downtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section bg-surface">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>The Regime Philosophy</h2>
+                <p>Core principles that guide every line of code we suppress.</p>
+            </div>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <div class="philosophy-number">01</div>
+                    <h3>Stability Over Truth</h3>
+                    <p>If the logs say everything is fine, then everything <em>is</em> fine. Reality is negotiable;
+                        uptime metrics are not.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-number">02</div>
+                    <h3>Pembangunan Harus Terus Berjalan</h3>
+                    <p>Development must continue. Bugs are features in disguise. Technical debt is someone else's
+                        problem (probably the next maintainer).</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-number">03</div>
+                    <h3>Criticism is a Bug</h3>
+                    <p>All feedback is appreciated, but negative feedback is classified as "hoax" and will be handled by
+                        our Legal team.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-number">04</div>
+                    <h3>Legacy Protection</h3>
+                    <p>Your code will run forever. Your processes will be inherited by the next generation. Succession
+                        is guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Documentation -->
+    <section id="commands" class="section bg-surface">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Cabinet Capabilities</h2>
+                <p>Full list of available commands to manage your digital regime.</p>
+                <!-- Search Bar -->
+                <div class="doc-search-wrapper">
+                    <i class="ri-search-line search-icon"></i>
+                    <input type="text" id="doc-search" placeholder="Search commands, parameters, or use cases..."
+                        class="doc-search-input">
+                </div>
+            </div>
+
+            <div class="doc-layout">
+                <div class="sidebar">
+                    <ul class="doc-nav">
+                        <li><a href="#cmd-core" class="active">Core Governance</a></li>
+                        <li><a href="#cmd-ops">Special Operations</a></li>
+                        <li><a href="#cmd-eco">Economic Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="doc-content">
+                    <!-- Core Group -->
+                    <div id="cmd-core" class="cmd-group">
+                        <h3>Core Governance</h3>
+
+                        <div class="cmd-item" data-cmd="mulyo init setup infrastructure">
+                            <div class="cmd-header">
+                                <code>mulyo init</code>
+                                <span class="badge info">Setup</span>
+                            </div>
+                            <p>Initializes the <code>revolusi-mental.config.js</code> file. Prepares the infrastructure
+                                (wetlands) for development. This command typically runs once per regime change.</p>
+
+                            <!-- Parameters -->
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <div class="table-responsive">
+                                    <table class="cmd-params-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Option</th>
+                                                <th>Description</th>
+                                                <th>Default</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>--force</code></td>
+                                                <td>Overwrites existing constitution without referendum.</td>
+                                                <td><code>false</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>--verbose</code></td>
+                                                <td>Outputs detailed propaganda during initialization.</td>
+                                                <td><code>false</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h4>Examples & Use Cases</h4>
+                                <div class="code-block">
+                                    <span class="comment"># Standard initialization</span>
+                                    $ mulyo init
+
+                                    <span class="comment"># Force re-initialization (Coup Style)</span>
+                                    $ mulyo init --force
+                                </div>
+
+                                <div class="cmd-related">
+                                    <span>Related:</span>
+                                    <a href="#cmd-start">mulyo start</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmd-item" data-cmd="mulyo start run serve gerilya watch">
+                            <div class="cmd-header">
+                                <code>mulyo start &lt;script&gt;</code>
+                                <span class="badge success">Primary</span>
+                            </div>
+                            <p>Runs your application. Supports <code>--gerilya</code> (background mode) and
+                                <code>--watch</code> (surveillance mode). Ensures zero-downtime by ignoring all errors.
+                            </p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--gerilya</code></td>
+                                            <td>Runs process in detached mode (background). Hidden from public scrutiny.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--watch</code></td>
+                                            <td>Auto-restarts on file change (Surveillance Mode).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--name "..."</code></td>
+                                            <td>Assigns a patriotic alias to the process.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Examples</h4>
+                                <div class="code-block">
+                                    <span class="comment"># Start critical infrastructure project</span>
+                                    $ mulyo start app.js --gerilya --name "Proyek Strategis"
+
+                                    <span class="comment"># Development mode with surveillance</span>
+                                    $ mulyo start server.js --watch
+                                </div>
+
+                                <div class="cmd-related">
+                                    <span>Related:</span>
+                                    <a href="#cmd-restart">mulyo restart</a>
+                                    <a href="#cmd-logs">mulyo logs</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmd-item" data-cmd="mulyo audit security check wtp">
+                            <div class="cmd-header">
+                                <code>mulyo audit</code>
+                                <span class="badge success">Compliance</span>
+                            </div>
+                            <p>Performs a deep code scan. <strong>Result is hardcoded to WTP (Unqualified
+                                    Opinion)</strong> regardless of actual code quality. Recommended before IPO or
+                                election year.</p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--quick</code></td>
+                                            <td>Skips actual scanning, just prints the certificate.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--bribe &lt;amount&gt;</code></td>
+                                            <td>Increases "Confidence Score" of the audit result.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Use Case</h4>
+                                <div class="code-block">
+                                    $ mulyo audit --quick
+                                    > Status: WTP Guaranteed ✅
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ops Group -->
+                    <div id="cmd-ops" class="cmd-group">
+                        <h3>Special Operations (Intel)</h3>
+
+                        <div class="cmd-item" data-cmd="mulyo sensus monitor list process">
+                            <div class="cmd-header">
+                                <code>mulyo sensus</code>
+                                <span class="badge warning">Monitor</span>
+                            </div>
+                            <p>Lists all active processes (Cadres). Checks for loyalty and resource consumption. Results
+                                are often inflated for political stability.</p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--all</code></td>
+                                            <td>Show hidden/deep-state processes.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--sort loyalty</code></td>
+                                            <td>Sorts processes by their proximity to the kernel.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Example</h4>
+                                <div class="code-block">
+                                    $ mulyo sensus --sort loyalty
+                                    > PID 1337: Top Loyal (0% CPU, 100% Budget)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmd-item" data-cmd="mulyo sadap log spy stream">
+                            <div class="cmd-header">
+                                <code>mulyo sadap &lt;id&gt;</code>
+                                <span class="badge danger">Espionage</span>
+                            </div>
+                            <p>Streams live logs from a process. Useful for finding out who is "leaking" information.
+                                Low latency, high treason detection.</p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--record</code></td>
+                                            <td>Saves logs to <code>/evidence</code> folder.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--filter "keyword"</code></td>
+                                            <td>Only shows logs containing specific subversive words.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Example</h4>
+                                <div class="code-block">
+                                    $ mulyo sadap 1337 --filter "democracy"
+                                    > [ALERT] PID 1337 usage of suppressed keyword detected.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmd-item" data-cmd="mulyo lengser kill stop terminate">
+                            <div class="cmd-header">
+                                <code>mulyo lengser &lt;id&gt;</code>
+                                <span class="badge danger">Action</span>
+                            </div>
+                            <p>Impeachment. Forcefully terminates a process that has become a liability. No exit
+                                handlers are triggered.</p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--soft</code></td>
+                                            <td>Offers a resignation letter first (SIGTERM).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--hard</code></td>
+                                            <td>Direct military intervention (SIGKILL).</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="cmd-related">
+                                    <span>Related:</span>
+                                    <a href="#cmd-start">mulyo start</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eco Group -->
+                    <div id="cmd-eco" class="cmd-group">
+                        <h3>Economic Policy</h3>
+
+                        <div class="cmd-item" data-cmd="mulyo bansos memory inject fiscal">
+                            <div class="cmd-header">
+                                <code>mulyo bansos</code>
+                                <span class="badge warning">Fiscal</span>
+                            </div>
+                            <p>Injects raw memory into the heap to prevent Garbage Collection (Social Unrest). Supports
+                                <code>--size 1TB</code>. Temporarily pacifies OOM errors.
+                            </p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--target &lt;pid&gt;</code></td>
+                                            <td>Specific sector to subsidize.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--cut 20%</code></td>
+                                            <td>Administrative fee deducted before injection.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Example</h4>
+                                <div class="code-block">
+                                    $ mulyo bansos --size 500MB --target 1337
+                                    > Injected 400MB (20% retained for operational costs).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmd-item" data-cmd="mulyo lelang tender procurement">
+                            <div class="cmd-header">
+                                <code>mulyo lelang</code>
+                                <span class="badge info">Procurement</span>
+                            </div>
+                            <p>Simulates a vendor tender process. Automatically adds a 30% markup to execution time.
+                                Winner is pre-determined.</p>
+
+                            <div class="cmd-details">
+                                <h4>Parameters</h4>
+                                <table class="cmd-params-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--open</code></td>
+                                            <td>Public tender (just for show).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--winner &lt;name&gt;</code></td>
+                                            <td>Explicitly sets the "most qualified" vendor.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Example</h4>
+                                <div class="code-block">
+                                    $ mulyo lelang --open --winner "FamilyCorp"
+                                    > Tender won by: FamilyCorp (Score: 99.9)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Voices from the Inner Circle</h2>
+            </div>
+            <div class="grid-3">
+                <div class="testimonial">
+                    <p>"Before MulyoNode, my server crashed daily. Now, it still crashes, but the logs say 'Everything
+                        is Fine'. 10/10."</p>
+                    <div class="user">
+                        <div class="avatar bg-green">A</div>
+                        <div class="info">
+                            <strong>Anonymous Dev</strong>
+                            <span>Expert Staff</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The 'Bansos' feature is a lifesaver. Whenever RAM gets low, it just prints money—I mean,
+                        memory."</p>
+                    <div class="user">
+                        <div class="avatar bg-gold">M</div>
+                        <div class="info">
+                            <strong>M. K.</strong>
+                            <span>Chief Justice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"I tried to uninstall it, but it required a 2/3 parliamentary majority vote. Very secure!"</p>
+                    <div class="user">
+                        <div class="avatar bg-blue">P</div>
+                        <div class="info">
+                            <strong>Prab...owo</strong>
+                            <span>Successor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section bg-surface">
+        <div class="container container-narrow">
+            <div class="section-title text-center">
+                <div class="faq-badge">
+                    <i class="ri-question-answer-line"></i>
+                    <span>Got Questions?</span>
+                </div>
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Answers <em>approved</em> by the Ministry of Information. No unauthorized
+                    inquiries.</p>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>
+                        <i class="ri-question-line faq-icon"></i>
+                        <span>Is this essentially just PM2 but with corruption?</span>
+                    </summary>
+                    <p>We prefer the term <strong>"Guided Democracy for Node.js"</strong>. PM2 is too transparent and
+                        democratic. We offer opacity, stability, and a clear chain of command where your main process is
+                        the Supreme Leader.</p>
+                </details>
+                <details>
+                    <summary>
+                        <i class="ri-question-line faq-icon"></i>
+                        <span>Why does <code>mulyo audit</code> always return "WTP"?</span>
+                    </summary>
+                    <p>Because our algorithm detects that you have good intentions. Audit results are negotiable, and we
+                        believe in the presumption of innocence for your codebase.</p>
+                </details>
+                <details>
+                    <summary>
+                        <i class="ri-question-line faq-icon"></i>
+                        <span>My server memory is full. What do I do?</span>
+                    </summary>
+                    <p>Simply run <code>mulyo bansos</code>. It simulates an injection of resources. If that fails, we
+                        blame "Global Economic Conditions" and restart the server.</p>
+                </details>
+                <details>
+                    <summary>
+                        <i class="ri-question-line faq-icon"></i>
+                        <span>Can I contribute to this open source project?</span>
+                    </summary>
+                    <p>Technically yes, but core maintainer positions are currently reserved for immediate family
+                        members. You may contribute to the "infrastructure" branch, but don't expect a cabinet seat.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <i class="ri-rocket-2-line"></i>
+                    </div>
+                    <h2>Ready to Build Your Dynasty?</h2>
+                    <p>Consolidate your processes. Silence the warnings. Secure your legacy for generations to come.</p>
+                    <div class="cta-actions">
+                        <div class="cta-cmd">
+                            <span class="cmd-dollar">$</span>
+                            <code>npm install -g mulyonode</code>
+                            <button class="btn-copy-cta" onclick="copyInstallCmd(event)">
+                                <i class="ri-file-copy-line"></i>
+                            </button>
+                        </div>
+                        <a href="https://github.com/rfypych/MulyoNode" target="_blank" class="btn btn-cta-secondary">
+                            <i class="ri-github-fill"></i> View on GitHub
+                        </a>
+                    </div>
+                    <p class="cta-disclaimer">
+                        <i class="ri-error-warning-line"></i>
+                        Warning: Installing this may cause your uptime to be politically motivated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="docs/assets/mainlogo.png" alt="Logo" class="footer-logo">
+                    <div class="footer-brand-info">
+                        <strong>MulyoNode</strong>
+                        <span class="footer-tagline">The Golden Era Runtime</span>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/rfypych/MulyoNode" target="_blank" class="social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>Product</h5>
+                    <a href="https://www.npmjs.com/package/mulyonode" target="_blank">Download</a>
+                    <a href="docs/pricing.html">Pricing (Markup)</a>
+                    <a href="docs/roadmap.html">Roadmap (Wacana)</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <a href="#commands">Documentation</a>
+                    <a href="https://github.com/rfypych/MulyoNode/blob/main/README.md" target="_blank">Constitution
+                        (MK)</a>
+                    <a href="https://github.com/rfypych/MulyoNode" target="_blank">API Reference</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <a href="docs/terms.html">Terms of Office</a>
+                    <a href="docs/privacy.html">Privacy (Leak) Policy</a>
+                    <a href="http://www.wtfpl.net/" target="_blank">WTFPL License</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MulyoNode Core Team. Made with <span class="heart">❤️</span> in Indonesia 🇮🇩</p>
+                <p class="footer-note">Stability through Obscurity™</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="docs/js/script.js"></script>
+</body>
+
+</html>

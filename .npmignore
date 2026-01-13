@@ -35,8 +35,12 @@ coverage/
 examples/
 example/
 
-# Generated config (rahasia rezim)
-revolusi-mental.config.js
+# Website Files (Not for NPM)
+index.html
+docs/
+
+# Generated config (included for reference)
+# revolusi-mental.config.js
 
 # Benchmarks
 benchmark/

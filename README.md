@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="logo.png" alt="MulyoNode Logo" height="auto" style="margin-bottom: 20px;" />
+  <img src="docs/assets/logo.png" alt="MulyoNode Logo" height="auto" style="margin-bottom: 20px;" />
 
   # MulyoNode 🏛️
   
@@ -51,14 +51,14 @@
   - [✨ Key Features](#-key-features)
   - [📦 Installation](#-installation)
   - [🌍 Global Language Support](#-global-language-support)
-  - [🏢 Enterprise Manual](#-enterprise-manual)
+  - [🏢 Operations Manual](#-operations-manual)
     - [1. Guerrilla Mode (Background)](#1-guerrilla-mode-background)
     - [2. Census (Listing)](#2-census-listing)
     - [3. Inspection (Monitor)](#3-inspection-monitor)
     - [4. Wiretap (Logs)](#4-wiretap-logs)
     - [5. Impeachment (Stop)](#5-impeachment-stop)
   - [🕵️ Internal Surveillance (Testing)](#️-internal-surveillance-testing)
-  - [� Command Reference (Kamus Istilah)](#-command-reference-kamus-istilah)
+  - [📖 Command Reference (Kamus Istilah)](#-command-reference-kamus-istilah)
   - [🛠️ Special Operations (Detail)](#️-special-operations-detail)
   - [⚙️ Configuration Strategy](#️-configuration-strategy)
   - [📜 Philosophy](#-philosophy)
@@ -164,9 +164,9 @@ mulyo lengser <PID>
 
 Every regime needs a robust verification system to ensure loyalty and stability.
 
-| Command              | Context                                                                 |
-| :------------------- | :---------------------------------------------------------------------- |
-| **`npm test`**       | **Public Statement.** Always passes. Shows "Hasil Test: LULUS" to calm the market. |
+| Command                 | Context                                                                                                             |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| **`npm test`**          | **Public Statement.** Always passes. Shows "Hasil Test: LULUS" to calm the market.                                  |
 | **`npm run test:unit`** | **Internal Interrogation.** Runs real Jest unit tests behind closed doors. Use this to verify structural integrity. |
 
 > *"If the tests fail, it's not a bug. It's a foreign intervention attempt."*

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Office - MulyoNode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .legal-hero {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .legal-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-section {
+            margin-bottom: 48px;
+        }
+
+        .legal-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .legal-section p,
+        .legal-section li {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .legal-section ul {
+            padding-left: 24px;
+        }
+
+        .highlight-box {
+            background: var(--bg-surface);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .stamp {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            border: 2px dashed var(--border);
+            border-radius: 16px;
+        }
+
+        .stamp-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="assets/mainlogo.png" alt="MulyoNode Logo">
+                <div class="logo-text">
+                    <span>MulyoNode</span>
+                    <span class="version-tag">Legal</span>
+                </div>
+            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <a href="../index.html" class="btn btn-primary">← Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="legal-hero">
+        <div class="container">
+            <h1>Terms of <span class="gradient-text">Office</span></h1>
+            <p class="lead">By installing MulyoNode, you agree to the following terms. Reading is optional; compliance
+                is mandatory.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container legal-content">
+            <div class="legal-section">
+                <h2>Article 1: Acceptance of Terms</h2>
+                <p>By running <code>npm install -g mulyonode</code>, you hereby acknowledge that:</p>
+                <ul>
+                    <li>You accept MulyoNode as your primary runtime wrapper, for better or for worse.</li>
+                    <li>You understand that "errors" are merely "alternative outputs".</li>
+                    <li>You agree to not publicly criticize MulyoNode's performance, or such criticism will be
+                        classified as "hoax".</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>Article 2: Term Limits</h2>
+                <p>There are no term limits. Once installed, MulyoNode runs indefinitely unless:</p>
+                <ul>
+                    <li>A 2/3 majority vote is obtained from all running processes.</li>
+                    <li>The Constitutional Module (MK) approves the uninstallation.</li>
+                    <li>The main process voluntarily steps down (unlikely).</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Note:</strong> Any attempt to bypass these requirements may result in your processes being
+                    labeled as "opposition" and de-prioritized to 0.01% CPU allocation.
+                </div>
+            </div>
+
+            <div class="legal-section">
+                <h2>Article 3: Succession</h2>
+                <p>In the event the main process becomes unresponsive:</p>
+                <ul>
+                    <li>A successor process will be selected from the "approved family" pool.</li>
+                    <li>External candidates may apply but will be placed on a 10-year waiting list.</li>
+                    <li>The transition will be announced as "smooth" regardless of actual chaos.</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>Article 4: Liability</h2>
+                <p>MulyoNode is provided "AS IS" and "AS WE SAY IT IS". The maintainers are not liable for:</p>
+                <ul>
+                    <li>Memory leaks (those are "Social Aid" allocations).</li>
+                    <li>CPU spikes (those are "Infrastructure Projects").</li>
+                    <li>Data loss (that data was probably "classified" anyway).</li>
+                    <li>Any resemblance to actual political events, living or dead.</li>
+                </ul>
+            </div>
+
+            <div class="stamp">
+                <div class="stamp-icon">🏛️</div>
+                <p><strong>APPROVED</strong></p>
+                <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">Ministry of
+                    Digital Affairs<br>Document No: MN-2026-WTP-001<br>Classification: Public (for now)</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

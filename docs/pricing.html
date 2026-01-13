@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - MulyoNode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .pricing-hero {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .pricing-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .pricing-hero .lead {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .pricing-card {
+            background: var(--bg-body);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+        }
+
+        .pricing-card.featured::before {
+            content: 'RECOMMENDED';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--primary);
+            color: #fff;
+            padding: 4px 40px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            transform: rotate(45deg);
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .plan-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .plan-price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .plan-desc {
+            color: var(--text-muted);
+            margin: 16px 0 24px;
+            font-size: 0.95rem;
+        }
+
+        .plan-features {
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .plan-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .plan-features li i {
+            color: var(--primary);
+        }
+
+        .disclaimer {
+            margin-top: 60px;
+            padding: 24px;
+            background: var(--bg-surface);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .disclaimer p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="assets/mainlogo.png" alt="MulyoNode Logo">
+                <div class="logo-text">
+                    <span>MulyoNode</span>
+                    <span class="version-tag">Pricing</span>
+                </div>
+            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <a href="../index.html" class="btn btn-primary">← Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Transparent <span class="gradient-text">Pricing</span></h1>
+            <p class="lead">Choose the plan that fits your regime's budget. All prices include standard markup as per
+                Procurement Regulation Article 69.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-name">Rakyat Biasa</div>
+                    <div class="plan-price">$0 <span>/forever</span></div>
+                    <p class="plan-desc">For individual developers who know their place in the hierarchy.</p>
+                    <ul class="plan-features">
+                        <li><i class="ri-check-line"></i> Basic runtime wrapper</li>
+                        <li><i class="ri-check-line"></i> WTP audit results</li>
+                        <li><i class="ri-check-line"></i> Community support (ignored)</li>
+                        <li><i class="ri-close-line" style="color: #ef4444;"></i> No cabinet access</li>
+                        <li><i class="ri-close-line" style="color: #ef4444;"></i> No priority scheduling</li>
+                    </ul>
+                    <a href="https://www.npmjs.com/package/mulyonode" class="btn btn-primary"
+                        style="width: 100%;">Install Now</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="plan-name">Anak Emas</div>
+                    <div class="plan-price">$999 <span>/month + 30% markup</span></div>
+                    <p class="plan-desc">For organizations with "special relationships" to the core team.</p>
+                    <ul class="plan-features">
+                        <li><i class="ri-check-line"></i> Everything in Rakyat Biasa</li>
+                        <li><i class="ri-check-line"></i> Priority CPU scheduling</li>
+                        <li><i class="ri-check-line"></i> Dedicated hotline</li>
+                        <li><i class="ri-check-line"></i> Error immunity (paid per incident)</li>
+                        <li><i class="ri-check-line"></i> Audit result customization</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="alert('Maaf, posisi sudah diisi keluarga.')">Contact Sales</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-name">Dinasti</div>
+                    <div class="plan-price">Custom</div>
+                    <p class="plan-desc">For regimes that require total control. Includes private fork.</p>
+                    <ul class="plan-features">
+                        <li><i class="ri-check-line"></i> Everything in Anak Emas</li>
+                        <li><i class="ri-check-line"></i> Source code ownership</li>
+                        <li><i class="ri-check-line"></i> Remove all attribution</li>
+                        <li><i class="ri-check-line"></i> 24/7 whisper network support</li>
+                        <li><i class="ri-check-line"></i> Guaranteed legacy protection</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="alert('Silakan hubungi Paman untuk negosiasi.')">Schedule Meeting</button>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <p>⚠️ Disclaimer: All prices are subject to "adjustment" based on project visibility and political
+                    climate.</p>
+                <p>Payment accepted via: Bank Transfer, Cryptocurrency, or "Bantuan Sosial" vouchers.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -38,7 +38,7 @@ coverage/
 .nyc_output/
 
 # Config yang di-generate (rahasia konfigurasi rezim)
-revolusi-mental.config.js
+# revolusi-mental.config.js (included now)
 
 # Temporary files (file sementara seperti jabatan)
 *.tmp
