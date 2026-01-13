@@ -11,6 +11,7 @@ test-*.js
 .eslintrc*
 .prettierrc*
 .editorconfig
+eslint.config.js
 
 # Documentation source (yang penting hasilnya, bukan prosesnya)
 docs/
