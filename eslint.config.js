@@ -7,14 +7,15 @@ module.exports = [
   prettier,
   {
     ignores: [
-        'test.js',
-        'background-test.js',
-        'debug-state.js',
-        'proyek-presiden.js',
-        'test-crash.js',
-        'test-fs.js',
-        'coverage/',
-        '.husky/'
+      'test.js',
+      'background-test.js',
+      'debug-state.js',
+      'proyek-presiden.js',
+      'test-crash.js',
+      'test-fs.js',
+      'coverage/',
+      '.husky/',
+      'docs/'
     ],
   },
   {
