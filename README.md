@@ -1,5 +1,7 @@
 <div align="center">
 
+  <img src="docs/assets/logo.png" alt="MulyoNode Logo" height="auto" style="margin-bottom: 20px;" />
+
 # MulyoNode 🏛️
 
 <p align="center">
