@@ -2,25 +2,18 @@
 
   <img src="docs/assets/logo.png" alt="MulyoNode Logo" height="auto" style="margin-bottom: 20px;" />
 
-  # MulyoNode 🏛️
-  
-  **The Runtime That Ensures Continuity, Stability, and Absolute Power.**
-  
-<p align="center">
-<!-- Real Badges -->
-<a href="https://www.npmjs.com/package/mulyonode">
-<img src="https://img.shields.io/npm/v/mulyonode?style=for-the-badge&color=red" alt="NPM Version" />
-</a>
-<a href="https://nodejs.org">
-<img src="https://img.shields.io/badge/node-%3E%3D18.0.0-green?style=for-the-badge&logo=node.js" alt="Node Version" />
-</a>
-<a href="#">
-<img src="https://img.shields.io/badge/build-SAFE-brightgreen?style=for-the-badge&logo=github-actions" alt="Build Status" />
-</a>
+# MulyoNode 🏛️
 
-<!-- Satirical Badges -->
+<p align="center">
+  <b>The Process Manager That Guarantees 3 Terms of Uptime.</b>
+</p>
+
+<p align="center">
 <a href="#">
-<img src="https://img.shields.io/badge/stabilitas-TERJAMIN-blue?style=for-the-badge&labelColor=1a1a2e" alt="Stability" />
+<img src="https://img.shields.io/badge/build-SAFE-green?style=for-the-badge&labelColor=1a1a2e" alt="Build Status" />
+</a>
+<a href="#">
+<img src="https://img.shields.io/badge/stability-GUARANTEED-blue?style=for-the-badge&labelColor=1a1a2e" alt="Stability" />
 </a>
 <a href="#">
 <img src="https://img.shields.io/badge/audit-WTP-success?style=for-the-badge&labelColor=1a1a2e" alt="Audit Status" />
@@ -32,7 +25,7 @@
 <img src="https://img.shields.io/badge/license-WTFPL-lightgrey?style=for-the-badge" alt="License" />
 </a>
 </p>
-  
+
 <p align="center">
 <em>"Tidak ada masalah jika tidak ada yang melaporkan."</em>
 <br>
@@ -57,6 +50,7 @@
     - [3. Inspection (Monitor)](#3-inspection-monitor)
     - [4. Wiretap (Logs)](#4-wiretap-logs)
     - [5. Impeachment (Stop)](#5-impeachment-stop)
+  - [🏗️ Architecture](#️-architecture)
   - [🕵️ Internal Surveillance (Testing)](#️-internal-surveillance-testing)
   - [📖 Command Reference (Kamus Istilah)](#-command-reference-kamus-istilah)
   - [🛠️ Special Operations (Detail)](#️-special-operations-detail)
@@ -160,6 +154,18 @@ mulyo lengser <PID>
 
 ---
 
+## 🏗️ Architecture
+
+The infrastructure is built on pillars of stability:
+
+- **`bin/mulyo`**: The public face (CLI Entry Point).
+- **`lib/process-manager.js`**: The hidden hand. Manages process lifecycle ("Dynasty"), ensuring children inherit privileges.
+- **`lib/config.js`**: The manifesto loader. Translates political will into technical execution.
+- **`lib/logger.js`**: The propaganda machine. Sanitizes output for public consumption.
+- **`lib/state.js`**: The "Black Book". Tracks active agents in `~/.mulyo/ordal.json`.
+
+---
+
 ## 🕵️ Internal Surveillance (Testing)
 
 Every regime needs a robust verification system to ensure loyalty and stability.
@@ -238,21 +244,27 @@ mulyo rapat
 
 ## ⚙️ Configuration Strategy
 
-The **`revolusi-mental.config.js`** file controls the regime's behavior.
+The **`revolusi-mental.config.js`** file controls the regime's behavior. Satirical fields are mapped to technical limits:
+
+| Satirical Field | Technical Meaning | Default |
+|-----------------|-------------------|---------|
+| `koalisiGemuk` | **Memory Limit** (512MB hard limit despite "unlimited" promise) | `true` |
+| `anakEmas` | **CPU Priority** (Attempts to lower nice value) | `true` |
+| `modeBlusukan` | **Restart Delay** (Time to wait before resurrection) | `'superfisial'` |
 
 ```javascript
 module.exports = {
   // Regime Stability
   rezim: 'otoriter',           // 'demokratis' is deprecated
-  
+
   // Resource Allocation
-  koalisiGemuk: true,          // Unlimited memory access
-  anakEmas: true,              // High CPU priority
-  
+  koalisiGemuk: true,          // Memory Limit: 512MB
+  anakEmas: true,              // CPU Priority: High
+
   // Fiscal Policy
   anggaranBansos: '1GB',       // Buffer size
   markupAnggaran: 30,          // Operational cost (%)
-  
+
   // Public Relations
   statusAudit: 'WTP',          // Guaranteed audit result
 };
