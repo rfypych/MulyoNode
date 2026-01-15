@@ -1,6 +1,6 @@
 {
   "name": "mulyonode",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A runtime wrapper as stable as a grand coalition. Criticism-proof, pro-nepotism, and guaranteed WTP.",
   "main": "lib/process-manager.js",
   "bin": {

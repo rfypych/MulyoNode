@@ -8,6 +8,33 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ---
 
+## [1.0.9] - 2026-01-11
+
+### 🏗️ Pembangunan Infrastruktur (Architectural Refactor)
+- **Modular Architecture**: Split concerns into dedicated modules:
+  - `lib/process-manager.js` (Class-based Process Manager with auto-restart logic)
+  - `lib/logger.js` (Centralized satirical logger)
+  - `lib/config.js` (Robust config loading with technical mapping)
+  - `lib/handlers.js` (Clean separation of command logic)
+- **Core Logic Upgrade**: Replaced legacy `dynasty.js` with `ProcessManager` for better stability and testability.
+
+### 🧪 Pengawasan Internal (Testing Enhancement)
+- **Integration Tests**: Added real process spawning tests in `tests/integration/process-manager.test.js` to verify auto-restart and lifecycle management.
+- **CLI Tests**: Added command execution tests in `tests/integration/commands.test.js`.
+- **Unit Test Coverage**: Updated existing unit tests to support new architecture.
+
+### 📚 Dokumen Negara (Documentation)
+- **Professional English Docs**: Restored `README.md` and `SECURITY.md` to professional English while preserving the satirical context within descriptions.
+- **Contribution Guidelines**: Added `CONTRIBUTING.md` (in English) to guide new developers.
+- **Logo Restoration**: Fixed missing assets in documentation.
+
+### 🛡️ Pertahanan (CI/CD & Reliability)
+- **Enhanced Pipeline**: Updated `.github/workflows/pengawasan-melekat.yml` to include Linting, Unit & Integration Tests, and Security Audit steps.
+- **Config Mapping**: `revolusi-mental.config.js` fields now map to actual technical limits (e.g., `koalisiGemuk` -> 512MB limit, `anakEmas` -> Priority).
+- **Clean Publishing**: Updated `.npmignore` to exclude development artifacts.
+
+---
+
 ## [1.0.0-periode-3] - 2026-01-11
 
 ### 🎉 Diresmikan (Added)
