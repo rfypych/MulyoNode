@@ -12,11 +12,14 @@ test-*.js
 .prettierrc*
 .editorconfig
 eslint.config.js
+.husky/
 
 # Documentation source (yang penting hasilnya, bukan prosesnya)
 docs/
 *.md
 !README.md
+!CONTRIBUTING.md
+!SECURITY.md
 
 # CI/CD config
 .github/
@@ -35,10 +38,10 @@ coverage/
 # Example files (contoh tidak perlu, langsung praktik)
 examples/
 example/
+proyek-presiden.js
 
 # Website Files (Not for NPM)
 index.html
-docs/
 
 # Generated config (included for reference)
 # revolusi-mental.config.js
