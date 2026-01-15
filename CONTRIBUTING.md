@@ -1,41 +1,41 @@
-# Panduan Kontribusi (Guideline Pembangunan)
+# Contribution Guidelines (Infrastructure Development Plan)
 
-Terima kasih telah berminat untuk bergabung dalam **Koalisi Developer Indonesia**.
-Kontribusi Anda akan dicatat sebagai amal jariyah (dan portofolio).
+Thank you for your interest in joining the **Developer Coalition**.
+Your contribution will be recorded as a legacy (and portfolio).
 
-## 🏗️ Cara Menambah Command Baru
+## 🏗️ How to Add a New Command
 
-1.  **Buat Handler**: Tambahkan fungsi handler baru di `lib/handlers.js`.
-    *   Gunakan `logger.info`, `logger.warn`, atau `logger.box` untuk output.
-    *   Jangan gunakan `console.log` mentah kecuali terpaksa.
-2.  **Daftarkan Command**: Edit `bin/mulyo` untuk mendaftarkan command baru menggunakan Commander.js.
+1.  **Create Handler**: Add a new handler function in `lib/handlers.js`.
+    *   Use `logger.info`, `logger.warn`, or `logger.box` for output.
+    *   Do not use raw `console.log` unless absolutely necessary (e.g. streaming).
+2.  **Register Command**: Edit `bin/mulyo` to register the new command using Commander.js.
 3.  **Testing**:
-    *   Buat unit test di `tests/lib/handlers.test.js`.
-    *   Pastikan coverage cukup (atau setidaknya terlihat hijau).
+    *   Create unit tests in `tests/lib/handlers.test.js`.
+    *   Ensure coverage is sufficient (or at least looks green).
 
-## 🧪 Menjalankan Test
+## 🧪 Running Tests
 
-Untuk memastikan stabilitas nasional (dan kode), jalankan:
+To ensure national stability (and code integrity), run:
 
 ```bash
 npm run test:unit
 ```
 
-Ini akan menjalankan:
-1.  **Unit Tests**: Menguji logika per modul secara terisolasi.
-2.  **Integration Tests**: Menguji spawning process asli (hati-hati, ini menggunakan real process).
+This will execute:
+1.  **Unit Tests**: Testing module logic in isolation.
+2.  **Integration Tests**: Testing real process spawning (caution: involves real processes).
 
-## 📝 Gaya Kode (Code Style)
+## 📝 Code Style
 
-- Gunakan **ESLint** dan **Prettier**.
-- Variabel satir sangat disarankan (contoh: `const anggaranBocor`, `function lobiPolitik()`).
-- Komentar kode harus menjelaskan "mengapa", bukan hanya "bagaimana" (tambah poin plus jika komentarnya lucu).
+- Use **ESLint** and **Prettier**.
+- Satirical variable names are highly recommended (e.g., `const budgetLeak`, `function politicalLobby()`).
+- Code comments should explain "why", not just "how" (bonus points if the comment is funny).
 
 ## 🚀 Pull Request
 
-- Pastikan PR Anda memiliki judul yang bombastis (contoh: "Mega Proyek Refactor", "Hilirisasi Algoritma").
-- Deskripsi PR harus meyakinkan bahwa perubahan ini demi kepentingan rakyat banyak.
-- Tunggu approval dari "Pusat" (Maintainer).
+- Ensure your PR title is bombastic (e.g., "Mega Refactor Project", "Algorithm Downstreaming").
+- The PR description must convince us that this change is for the greater good of the people.
+- Wait for approval from "Central Command" (Maintainers).
 
 ---
-*"Kerja, Kerja, Kerja (Tipes)"*
+*"Work, Work, Work (Typhus)"*
