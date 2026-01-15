@@ -1,32 +1,32 @@
-# Kebijakan Keamanan (Security Policy) 🛡️
+# Security Policy 🛡️
 
-"Keamanan negara adalah prioritas utama. Keamanan kode adalah prioritas kedua (setelah makan siang)."
+"National Security is the priority. Code Security is the second priority (right after lunch break)."
 
-## 📢 Pelaporan Celah Keamanan (Vulnerability Reporting)
+## 📢 Vulnerability Reporting
 
-Jika Anda menemukan celah keamanan ("kerang", webshell, SQL Injection, atau pintu belakang ordal) pada proyek ini, harap ikuti protokol berikut:
+If you find a security vulnerability ("shell", webshell, SQL Injection, or backdoor access) in this project, please follow these protocols:
 
-1.  **JANGAN** viralkan di Twitter/X. Nanti kami panik.
-2.  Kirim laporan rahasia ke: `laporan@badan-siber-mulyono.go.id` (Email ini fiktif, seperti janji kampanye).
-3.  Tunggu 2x24 jam. Jika tidak ada balasan, anggap saja "sedang didalami".
+1.  **DO NOT** make it viral on Twitter/X. We panic easily.
+2.  Send a confidential report to: `report@cyber-agency-mulyono.go.id` (This email is fictional, like campaign promises).
+3.  Wait for 2x24 hours. If there is no reply, assume it is "under investigation".
 
-## 🔍 Versi yang Didukung
+## 🔍 Supported Versions
 
-| Versi | Status | Keterangan |
+| Version | Status | Notes |
 | :--- | :--- | :--- |
-| 1.0.x | ✅ **Didukung** | Periode jabatan masih aktif. |
-| 0.x.x | ❌ **Lengser** | Sudah tidak menjabat. Jangan diungkit masa lalunya. |
+| 1.0.x | ✅ **Supported** | Active term. |
+| 0.x.x | ❌ **Impeached** | No longer in power. Do not dig up the past. |
 
-## 🚫 Yang Tidak Dianggap Celah Keamanan
+## 🚫 What is NOT considered a vulnerability
 
-Hal-hal berikut bukan bug, tapi fitur:
-1.  **Memory Leak**: Itu adalah "program berbagi resource".
-2.  **Process Crash**: Itu adalah "blusukan mendadak" ke sistem operasi.
-3.  **Slow Performance**: Itu adalah "birokrasi digital" agar terasa otentik.
+The following are not bugs, but features:
+1.  **Memory Leak**: This is "Resource Sharing Program".
+2.  **Process Crash**: This is "Unannounced Field Visit" (Blusukan) to the OS.
+3.  **Slow Performance**: This is "Digital Bureaucracy" to ensure authenticity.
 
-## 🤝 Komitmen Kami
+## 🤝 Our Commitment
 
-Kami berkomitmen untuk menambal celah keamanan secepat mungkin, tergantung ketersediaan anggaran dan mood pengembang.
+We are committed to patching vulnerabilities as fast as possible, depending on budget availability and developer mood.
 
 ---
-*Dokumen ini telah disetujui oleh Dewan Keamanan Runtime Nasional.*
+*This document has been approved by the National Runtime Security Council.*
